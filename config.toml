@@ -1,5 +1,5 @@
 # The URL the site will be built for
-base_url = "https://notdevkey.github.io"
+base_url = "https://rwnalds.github.io"
 
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
@@ -29,11 +29,11 @@ author = "Ronalds Palacis"
 after_dark_menu = [
     { name = "Home", url = "$BASE_URL" },
     { name = "Categories", url = "$BASE_URL/categories" },
-    { name = "Source", url = "https://github.com/notdevkey/notdevkey.github.io" },
+    { name = "Source", url = "https://github.com/rwnalds/rwnalds.github.io" },
     { name = "RSS", url = "$BASE_URL/rss.xml" },
-    { name = "About", url = "https://github.com/notdevkey" },
+    { name = "About", url = "https://github.com/rwnalds" },
     { name = "LinkedIn", url = "https://linkedin.com/in/ronalds-palacis" },
-    { name = "SoundCloud", url = "https://soundcloud.com/notdevkey" },
+    { name = "SoundCloud", url = "https://soundcloud.com/rwnalds" },
 ]
 
 after_dark_title = "Devkey's Blog | Dev • Design • Music"
