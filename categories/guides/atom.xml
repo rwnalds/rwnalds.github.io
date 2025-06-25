@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title> - Guides</title>
+    <link href="https://rwnalds.github.io/categories/guides/atom.xml" rel="self" type="application/atom+xml"/>
+    <link href="https://rwnalds.github.io"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2025-06-25T00:00:00+00:00</updated>
+    <id>https://rwnalds.github.io/categories/guides/atom.xml</id>
+    <entry xml:lang="en">
+        <title>How I won a startup competition in 3 weeks (and what actually mattered)</title>
+        <published>2025-06-25T00:00:00+00:00</published>
+        <updated>2025-06-25T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://rwnalds.github.io/soundpack-startup-journey/" type="text/html"/>
+        <id>https://rwnalds.github.io/soundpack-startup-journey/</id>
+        
+        <summary type="html">&lt;p&gt;Three weeks. One idea. Extreme hyperfixation. And somehow, I ended up pitching to investors in Riga after winning a startup competition I barely had time to prepare for. Here&#x27;s what actually made the difference when everything seemed stacked against me.&lt;&#x2F;p&gt;
+</summary>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Managing a solo business without losing your mind</title>
+        <published>2024-12-25T00:00:00+00:00</published>
+        <updated>2024-12-25T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://rwnalds.github.io/solo-business/" type="text/html"/>
+        <id>https://rwnalds.github.io/solo-business/</id>
+        
+        <summary type="html">&lt;p&gt;For the Business Management course in Business Academy, I researched effective strategies for running a solo business. While there&#x27;s plenty of advice out there about entrepreneurship, I wanted to focus specifically on sustainable approaches for one-person operations. Here&#x27;s what I learned about building and managing a successful solo business.&lt;&#x2F;p&gt;
+</summary>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Creating a simple and effective bookkeeping system for your cooperative</title>
+        <published>2024-11-04T00:00:00+00:00</published>
+        <updated>2024-11-04T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://rwnalds.github.io/bookkeeping-cooperative/" type="text/html"/>
+        <id>https://rwnalds.github.io/bookkeeping-cooperative/</id>
+        
+        <content type="html">&lt;p&gt;When starting any business, having a strong bookkeeping system is crucial. This ensures that all financial aspects are tracked, helping your cooperative thrive and make informed decisions. In this blog post, I&#x27;ll walk you through the basics of bookkeeping and guide you on how to create a bookkeeping system tailored for a cooperative offering digital services such as dropshipping, affiliate programs, eCommerce, SEO, website design, and coding.&lt;&#x2F;p&gt;
+&lt;p&gt;During the bookkeeping course in Business Academy, we were in the process for establishing a cooperative legal entity for ourselves, so we could proceed with client acquisition and legally get paid. Our team had one main goal for this course - create a system to keep track of invoices, expenses, and profits.&lt;&#x2F;p&gt;
+&lt;p&gt;For my course mentor - if you&#x27;re reading this - the course was really boring, so this blog was really low effort, though it contains all the valuable information I kind of had to find and learn. Hope this changes in the future. Happy reading.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;why-bookkeeping-matters-for-your-cooperative&quot;&gt;Why bookkeeping matters for your cooperative&lt;&#x2F;h2&gt;
+&lt;p&gt;Bookkeeping isn&#x27;t just about tracking income and expenses; it&#x27;s about understanding the financial health of your business. Here&#x27;s why it&#x27;s essential:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Helps with budgeting&lt;&#x2F;strong&gt;: Knowing where your money goes helps you allocate resources wisely.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Ensures legal compliance&lt;&#x2F;strong&gt;: Proper records help you stay compliant with tax laws and regulations.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Supports financial decision-making&lt;&#x2F;strong&gt;: Accurate data helps make strategic decisions for growth.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Enhances transparency&lt;&#x2F;strong&gt;: For cooperatives, where multiple members contribute and benefit, having a clear financial record fosters trust.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;key-elements-of-a-bookkeeping-system&quot;&gt;Key elements of a bookkeeping system&lt;&#x2F;h2&gt;
+&lt;p&gt;Before we dive into setting up your system, let&#x27;s outline the fundamental elements any bookkeeping system should include:&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;chart-of-accounts-coa&quot;&gt;Chart of accounts (COA)&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;This is the foundation of your bookkeeping system, categorizing all types of financial transactions.&lt;&#x2F;li&gt;
+&lt;li&gt;Common categories include assets, liabilities, equity, income, and expenses.&lt;&#x2F;li&gt;
+&lt;li&gt;For a cooperative focused on digital services, specific income sub-accounts might be &amp;quot;Website Design Revenue&amp;quot; or &amp;quot;Affiliate Program Earnings.&amp;quot;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;general-ledger&quot;&gt;General ledger&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;The core record where all transactions are logged. This includes everything from client payments to operational expenses.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;accounts-payable-and-receivable&quot;&gt;Accounts Payable and Receivable&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Accounts Payable (AP)&lt;&#x2F;strong&gt;: Keeps track of what your cooperative owes others.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Accounts Receivable (AR)&lt;&#x2F;strong&gt;: Monitors payments due from clients for services rendered.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;expense-tracking&quot;&gt;Expense tracking&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;This involves recording all outgoing funds, including software subscriptions, marketing costs, and development tools.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;invoices-and-receipts&quot;&gt;Invoices and receipts&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Keeping accurate records of issued invoices and receipts ensures consistency and proof of payment.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;steps-to-create-your-bookkeeping-system&quot;&gt;Steps to create your bookkeeping system&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;step-1-choose-the-right-software&quot;&gt;Step 1: Choose the right software&lt;&#x2F;h3&gt;
+&lt;p&gt;The first step is to pick a bookkeeping software that suits your cooperative&#x27;s needs. Popular choices include:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;QuickBooks&lt;&#x2F;strong&gt;: User-friendly and great for small to medium-sized businesses.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Xero&lt;&#x2F;strong&gt;: Known for its seamless integrations and ease of use.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Wave&lt;&#x2F;strong&gt;: Free option ideal for startups and small teams.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Spreadsheet tools&lt;&#x2F;strong&gt; (e.g., Excel or Google Sheets): Customizable and free, perfect for a starting point if you don&#x27;t want to invest right away.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Tip&lt;&#x2F;strong&gt;: If your cooperative has varied digital services, make sure your chosen software can handle multiple revenue streams and project tracking.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;h3 id=&quot;step-2-set-up-your-chart-of-accounts-coa&quot;&gt;Step 2: Set up your chart of accounts (COA)&lt;&#x2F;h3&gt;
+&lt;p&gt;Create a chart of accounts tailored to your business activities. Here&#x27;s a simple breakdown:&lt;&#x2F;p&gt;
+&lt;h4 id=&quot;income&quot;&gt;Income:&lt;&#x2F;h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Dropshipping Revenue&lt;&#x2F;li&gt;
+&lt;li&gt;Affiliate Program Commissions&lt;&#x2F;li&gt;
+&lt;li&gt;SEO Service Fees&lt;&#x2F;li&gt;
+&lt;li&gt;Coding&#x2F;Development Services&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h4 id=&quot;expenses&quot;&gt;Expenses:&lt;&#x2F;h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Software and Tools (e.g., hosting, SEO tools)&lt;&#x2F;li&gt;
+&lt;li&gt;Marketing and Advertising&lt;&#x2F;li&gt;
+&lt;li&gt;Salaries and Contractor Payments&lt;&#x2F;li&gt;
+&lt;li&gt;Miscellaneous Office Expenses&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;&lt;em&gt;Each of these should have unique account numbers for easy tracking and reporting.&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;step-3-record-all-financial-transactions&quot;&gt;Step 3: Record all financial transactions&lt;&#x2F;h3&gt;
+&lt;p&gt;Ensure every transaction is recorded in your general ledger. Whether it&#x27;s an invoice paid by a client for a website design or an expense for purchasing a premium plugin, logging everything will keep your records accurate.&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Tip&lt;&#x2F;strong&gt;: Develop a habit of updating your ledger weekly to avoid last-minute scrambles and missed entries.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;h3 id=&quot;step-4-implement-invoice-and-receipt-management&quot;&gt;Step 4: Implement invoice and receipt management&lt;&#x2F;h3&gt;
+&lt;p&gt;For your cooperative, handling digital services means issuing invoices and tracking client payments is routine. Here&#x27;s how to manage this effectively:&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;Issue invoices promptly: Use your bookkeeping software to create and send invoices immediately after a project is completed.&lt;&#x2F;li&gt;
+&lt;li&gt;Track due dates: Keep a clear list of outstanding payments and follow up with clients as necessary.&lt;&#x2F;li&gt;
+&lt;li&gt;Digitize receipts: Use scanning apps or upload digital receipts directly to your bookkeeping system for easy access and organization.&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;h3 id=&quot;step-5-regular-financial-reviews&quot;&gt;Step 5: Regular financial reviews&lt;&#x2F;h3&gt;
+&lt;p&gt;Assign a team member to review financial records at least once a month. This review should:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Verify that income and expense records are accurate.&lt;&#x2F;li&gt;
+&lt;li&gt;Ensure the cooperative&#x27;s cash flow is positive.&lt;&#x2F;li&gt;
+&lt;li&gt;Identify any discrepancies or opportunities to reduce costs.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;step-6-reporting-and-analysis&quot;&gt;Step 6: Reporting and analysis&lt;&#x2F;h3&gt;
+&lt;p&gt;Generate monthly or quarterly financial reports to share with your cooperative team. Essential reports include:&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Profit and Loss (P&amp;amp;L) Statement&lt;&#x2F;strong&gt;: Shows revenue and expenses over a specific period.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Balance Sheet&lt;&#x2F;strong&gt;: Lists assets, liabilities, and equity.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Cash Flow Statement&lt;&#x2F;strong&gt;: Demonstrates how money is moving in and out of the cooperative.&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;p&gt;These reports not only help you stay on track but also allow your team to make strategic decisions based on real data.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;tips-for-success&quot;&gt;Tips for success&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Keep it simple&lt;&#x2F;strong&gt;: Don&#x27;t overcomplicate your bookkeeping process. Stick to what works best for your cooperative.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Automate where possible&lt;&#x2F;strong&gt;: Use automation tools to sync your bank accounts and track expenses automatically.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Stay compliant&lt;&#x2F;strong&gt;: Ensure your system adheres to local laws, especially regarding taxes and cooperative regulations.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Communicate regularly&lt;&#x2F;strong&gt;: Since your cooperative is a group effort, maintain open communication about financials with all members.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;our-results&quot;&gt;Our results&lt;&#x2F;h2&gt;
+&lt;p&gt;I have to give props to my teammate Timur for creating majority of the system, as I was still working on unfinished sideprojects and was running low on time. He did a great job.
+We ended up utilizting Google Sheets for invoicing system, since it&#x27;s free and everyone knows how to use Google Sheets. Maybe it won&#x27;t be the best for long-term use, but it&#x27;s a good starting point.&lt;&#x2F;p&gt;
+&lt;p&gt;You can view the online version of the system &lt;a href=&quot;https:&#x2F;&#x2F;docs.google.com&#x2F;spreadsheets&#x2F;d&#x2F;1G8P7ypYb3L68pcKr-4e8zsqD6FNbPRUGLilbi2NKjFQ&#x2F;edit?usp=sharing&quot;&gt;here&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;And if under some circumstances the linked file disappears, here&#x27;s a simple view of the invoice table:&lt;&#x2F;p&gt;
+&lt;div style=&quot;width: 100%; overflow-x: auto;&quot;&gt;
+    &lt;table style=&quot;min-width: 1000px;&quot;&gt;
+        &lt;thead&gt;
+            &lt;tr&gt;
+                &lt;th&gt;Month&lt;&#x2F;th&gt;
+                &lt;th&gt;Invoice&lt;&#x2F;th&gt;
+                &lt;th&gt;Invoice Number&lt;&#x2F;th&gt;
+                &lt;th&gt;Invoice Type&lt;&#x2F;th&gt;
+                &lt;th&gt;Date&lt;&#x2F;th&gt;
+                &lt;th&gt;Due Date&lt;&#x2F;th&gt;
+                &lt;th&gt;Type&lt;&#x2F;th&gt;
+                &lt;th&gt;Description&lt;&#x2F;th&gt;
+                &lt;th&gt;Client Name&lt;&#x2F;th&gt;
+                &lt;th&gt;Amount (with VAT)&lt;&#x2F;th&gt;
+                &lt;th&gt;VAT&lt;&#x2F;th&gt;
+                &lt;th&gt;Without VAT&lt;&#x2F;th&gt;
+                &lt;th&gt;Payment Method&lt;&#x2F;th&gt;
+                &lt;th&gt;Payment Status&lt;&#x2F;th&gt;
+                &lt;th&gt;Payment Date&lt;&#x2F;th&gt;
+            &lt;&#x2F;tr&gt;
+        &lt;&#x2F;thead&gt;
+        &lt;tbody&gt;
+            &lt;tr&gt;
+                &lt;td&gt;April&lt;&#x2F;td&gt;
+                &lt;td&gt;[Link to file]&lt;&#x2F;td&gt;
+                &lt;td&gt;PAR-11385-23&lt;&#x2F;td&gt;
+                &lt;td&gt;Variable&lt;&#x2F;td&gt;
+                &lt;td&gt;30.04.2023&lt;&#x2F;td&gt;
+                &lt;td&gt;14.11.2024&lt;&#x2F;td&gt;
+                &lt;td&gt;Incoming&lt;&#x2F;td&gt;
+                &lt;td&gt;Websales&lt;&#x2F;td&gt;
+                &lt;td&gt;LMT&lt;&#x2F;td&gt;
+                &lt;td&gt;288.90 €&lt;&#x2F;td&gt;
+                &lt;td&gt;50.14 €&lt;&#x2F;td&gt;
+                &lt;td&gt;238.76 €&lt;&#x2F;td&gt;
+                &lt;td&gt;Bank transfer&lt;&#x2F;td&gt;
+                &lt;td&gt;Sent &#x2F; Paid&lt;&#x2F;td&gt;
+                &lt;td&gt;31.10.2024&lt;&#x2F;td&gt;
+            &lt;&#x2F;tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;April&lt;&#x2F;td&gt;
+                &lt;td&gt;[Link to file]&lt;&#x2F;td&gt;
+                &lt;td&gt;PAR-11386-23&lt;&#x2F;td&gt;
+                &lt;td&gt;Fixed&lt;&#x2F;td&gt;
+                &lt;td&gt;30.04.2023&lt;&#x2F;td&gt;
+                &lt;td&gt;14.05.2023&lt;&#x2F;td&gt;
+                &lt;td&gt;Outgoing&lt;&#x2F;td&gt;
+                &lt;td&gt;Websales&lt;&#x2F;td&gt;
+                &lt;td&gt;HostingCo&lt;&#x2F;td&gt;
+                &lt;td&gt;30.00 €&lt;&#x2F;td&gt;
+                &lt;td&gt;5.21 €&lt;&#x2F;td&gt;
+                &lt;td&gt;24.79 €&lt;&#x2F;td&gt;
+                &lt;td&gt;Credit Card&lt;&#x2F;td&gt;
+                &lt;td&gt;Sent&lt;&#x2F;td&gt;
+                &lt;td&gt;02.05.2023&lt;&#x2F;td&gt;
+            &lt;&#x2F;tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;May&lt;&#x2F;td&gt;
+                &lt;td&gt;[Link to file]&lt;&#x2F;td&gt;
+                &lt;td&gt;PAR-11387-23&lt;&#x2F;td&gt;
+                &lt;td&gt;Variable&lt;&#x2F;td&gt;
+                &lt;td&gt;15.05.2023&lt;&#x2F;td&gt;
+                &lt;td&gt;29.05.2023&lt;&#x2F;td&gt;
+                &lt;td&gt;Incoming&lt;&#x2F;td&gt;
+                &lt;td&gt;SEO Services&lt;&#x2F;td&gt;
+                &lt;td&gt;TechStart Ltd&lt;&#x2F;td&gt;
+                &lt;td&gt;450.00 €&lt;&#x2F;td&gt;
+                &lt;td&gt;78.10 €&lt;&#x2F;td&gt;
+                &lt;td&gt;371.90 €&lt;&#x2F;td&gt;
+                &lt;td&gt;Bank transfer&lt;&#x2F;td&gt;
+                &lt;td&gt;Not Sent&lt;&#x2F;td&gt;
+                &lt;td&gt;25.05.2023&lt;&#x2F;td&gt;
+            &lt;&#x2F;tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;May&lt;&#x2F;td&gt;
+                &lt;td&gt;[Link to file]&lt;&#x2F;td&gt;
+                &lt;td&gt;PAR-11388-23&lt;&#x2F;td&gt;
+                &lt;td&gt;Fixed&lt;&#x2F;td&gt;
+                &lt;td&gt;20.05.2023&lt;&#x2F;td&gt;
+                &lt;td&gt;03.06.2023&lt;&#x2F;td&gt;
+                &lt;td&gt;Incoming&lt;&#x2F;td&gt;
+                &lt;td&gt;Web Design&lt;&#x2F;td&gt;
+                &lt;td&gt;GreenCafe&lt;&#x2F;td&gt;
+                &lt;td&gt;750.00 €&lt;&#x2F;td&gt;
+                &lt;td&gt;130.17 €&lt;&#x2F;td&gt;
+                &lt;td&gt;619.83 €&lt;&#x2F;td&gt;
+                &lt;td&gt;Bank transfer&lt;&#x2F;td&gt;
+                &lt;td&gt;Sent &#x2F; Paid&lt;&#x2F;td&gt;
+                &lt;td&gt;01.06.2023&lt;&#x2F;td&gt;
+            &lt;&#x2F;tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;May&lt;&#x2F;td&gt;
+                &lt;td&gt;[Link to file]&lt;&#x2F;td&gt;
+                &lt;td&gt;PAR-11389-23&lt;&#x2F;td&gt;
+                &lt;td&gt;Variable&lt;&#x2F;td&gt;
+                &lt;td&gt;25.05.2023&lt;&#x2F;td&gt;
+                &lt;td&gt;08.06.2023&lt;&#x2F;td&gt;
+                &lt;td&gt;Outgoing&lt;&#x2F;td&gt;
+                &lt;td&gt;Software License&lt;&#x2F;td&gt;
+                &lt;td&gt;Adobe Inc&lt;&#x2F;td&gt;
+                &lt;td&gt;55.00 €&lt;&#x2F;td&gt;
+                &lt;td&gt;9.55 €&lt;&#x2F;td&gt;
+                &lt;td&gt;45.45 €&lt;&#x2F;td&gt;
+                &lt;td&gt;Credit Card&lt;&#x2F;td&gt;
+                &lt;td&gt;Sent &#x2F; Paid&lt;&#x2F;td&gt;
+                &lt;td&gt;25.05.2023&lt;&#x2F;td&gt;
+            &lt;&#x2F;tr&gt;
+        &lt;&#x2F;tbody&gt;
+    &lt;&#x2F;table&gt;
+&lt;&#x2F;div&gt;
+&lt;p&gt;This table is horizontally scrollable btw 😎&lt;&#x2F;p&gt;
+&lt;!-- Of course, this is just the table that ties it all together. We have additionally set up sheets for tracking  --&gt;
+&lt;h2 id=&quot;final-thoughts&quot;&gt;Final thoughts&lt;&#x2F;h2&gt;
+&lt;p&gt;Developing a bookkeeping system might seem daunting at first, but with the right approach and tools, your cooperative can manage its finances effectively. Start with a clear plan, keep your records organized, and review your finances regularly. This will set your team up for smooth operations and future success as you take on new clients and expand your digital service offerings.&lt;&#x2F;p&gt;
+&lt;p&gt;By setting up a robust bookkeeping system, you&#x27;re not just keeping track of numbers; you&#x27;re building a foundation for growth, transparency, and informed decision-making. Good luck, and may your cooperative thrive as you onboard your first clients!&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.coursera.org&#x2F;account&#x2F;accomplishments&#x2F;certificate&#x2F;VCF4VZVY5SCC&quot;&gt;Managerial Accounting: Cost Behaviors, Systems, and Analysis&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Maximizing copyright for monetary gain</title>
+        <published>2024-09-28T00:00:00+00:00</published>
+        <updated>2024-09-28T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://rwnalds.github.io/copyright-money/" type="text/html"/>
+        <id>https://rwnalds.github.io/copyright-money/</id>
+        
+        <summary type="html">&lt;p&gt;I accidentally made a banger remix and got away without disclosing copyrights. I wanted to understand how it works, so I dove into the world of copyrights and royalties. Here&#x27;s what I found.&lt;&#x2F;p&gt;
+</summary>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Beginners guide on setting yourself up for success</title>
+        <published>2024-09-16T00:00:00+00:00</published>
+        <updated>2024-09-16T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://rwnalds.github.io/setting-up-for-success/" type="text/html"/>
+        <id>https://rwnalds.github.io/setting-up-for-success/</id>
+        
+        <summary type="html">&lt;p&gt;A guide on how to (realistically) go big and not go home.&lt;&#x2F;p&gt;
+</summary>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>We built an Arduino MIDI controller, but not your usual MIDI controller.</title>
+        <published>2023-11-12T00:00:00+00:00</published>
+        <updated>2023-11-12T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://rwnalds.github.io/maze-midi/" type="text/html"/>
+        <id>https://rwnalds.github.io/maze-midi/</id>
+        
+        <summary type="html">&lt;p&gt;This is how we got into an innovation grants project without any prior expectations nor experience and figured our way through by creating a MIDI controller. I&#x27;m going to talk about all the insights, issues and how we resolved them. Also featuring some really crucial tips and an Ableton rack.&lt;&#x2F;p&gt;
+</summary>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>The biggest mistake of my early career</title>
+        <published>2023-04-12T00:00:00+00:00</published>
+        <updated>2023-04-12T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://rwnalds.github.io/biggest-mistake/" type="text/html"/>
+        <id>https://rwnalds.github.io/biggest-mistake/</id>
+        
+        <summary type="html">&lt;p&gt;Mistakes are good. They imply you&#x27;re in an uncomfortable place. I was so uncomfortable I left the place. But the place keeps chasing me till this day.&lt;&#x2F;p&gt;
+</summary>
+        
+    </entry>
+</feed>

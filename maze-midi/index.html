@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+      <!-- Enable responsiveness on mobile devices-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+      
+    
+
+      <title></title>
+
+      
+
+      
+          <link rel="stylesheet" href="https://rwnalds.github.io/site.css">
+      
+
+      
+      
+    </head>
+
+    <body class="hack dark main container">
+        
+    
+        
+                
+                    <header>
+                        <nav itemscope itemtype="http://schema.org/SiteNavigationElement">
+                        
+                            <a itemprop="url"
+                               class=""
+                               href="https://rwnalds.github.io">
+                                <span itemprop="name">Home</span></a>
+                        
+                            <a itemprop="url"
+                               class=""
+                               href="https://rwnalds.github.io/categories">
+                                <span itemprop="name">Categories</span></a>
+                        
+                            <a itemprop="url"
+                               class=""
+                               href="https://github.com/rwnalds/rwnalds.github.io">
+                                <span itemprop="name">Source</span></a>
+                        
+                            <a itemprop="url"
+                               class=""
+                               href="https://rwnalds.github.io/rss.xml">
+                                <span itemprop="name">RSS</span></a>
+                        
+                            <a itemprop="url"
+                               class=""
+                               href="https://github.com/rwnalds">
+                                <span itemprop="name">About</span></a>
+                        
+                            <a itemprop="url"
+                               class=""
+                               href="https://linkedin.com/in/ronalds-palacis">
+                                <span itemprop="name">LinkedIn</span></a>
+                        
+                            <a itemprop="url"
+                               class=""
+                               href="https://soundcloud.com/rwnalds">
+                                <span itemprop="name">SoundCloud</span></a>
+                        
+                        </nav>
+                    </header>
+                
+            
+    
+
+<article itemscope itemtype="http://schema.org/BlogPosting">
+    <header>
+        <h1 itemprop="headline">We built an Arduino MIDI controller, but not your usual MIDI controller.</h1>
+        <span class="muted">
+    <svg class="icon i-clock" viewBox="0 0 32 32"
+         width="16" height="16" fill="none" stroke="currentcolor"
+         stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+        <circle cx="16" cy="16" r="14"/>
+        <path d="M16 8 L16 16 20 20"/>
+    </svg>
+    <span>16 minute read</span>
+    <svg class="icon i-edit" viewBox="0 0 32 32"
+         width="16" height="16" fill="none" stroke="currentcolor"
+         stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+        <path d="M30 7 L25 2 5 22 3 29 10 27 Z M21 6 L26 11 Z M5 22 L10 27 Z"/>
+    </svg>
+
+    Published: 2023-11-12
+</span>
+    </header>
+    <div itemprop="articleBody">
+      <p>This is how we got into an innovation grants project without any prior expectations nor experience and figured our way through by creating a MIDI controller. I'm going to talk about all the insights, issues and how we resolved them. Also featuring some really crucial tips and an Ableton rack.</p>
+<span id="continue-reading"></span>
+<hr />
+<p>This is a blog where I go in detail about my experience and insights about the project and our solution. If you want to skip all the yapping, here's the TOC:</p>
+<ul>
+<li><a href="https://rwnalds.github.io/maze-midi/#context">Context</a></li>
+<li><a href="https://rwnalds.github.io/maze-midi/#june">June</a></li>
+<li><a href="https://rwnalds.github.io/maze-midi/#july">July</a></li>
+<li><a href="https://rwnalds.github.io/maze-midi/#august">August</a>
+<ul>
+<li><a href="https://rwnalds.github.io/maze-midi/#ableton-rack">Ableton Rack</a></li>
+<li><a href="https://rwnalds.github.io/maze-midi/#the-sketch">The Sketch</a></li>
+<li><a href="https://rwnalds.github.io/maze-midi/#the-3d-model">The 3D model</a></li>
+<li><a href="https://rwnalds.github.io/maze-midi/#the-web-design">The Web design</a></li>
+</ul>
+</li>
+<li><a href="https://rwnalds.github.io/maze-midi/#september">September</a></li>
+<li><a href="https://rwnalds.github.io/maze-midi/#october">October</a>
+<ul>
+<li><a href="https://rwnalds.github.io/maze-midi/#midi-controller-schema">MIDI controller schema</a></li>
+<li><a href="https://rwnalds.github.io/maze-midi/#the-result">The result</a></li>
+</ul>
+</li>
+<li><a href="https://rwnalds.github.io/maze-midi/#november">November</a></li>
+<li><a href="https://rwnalds.github.io/maze-midi/#conclusion">Conclusion</a></li>
+</ul>
+<h2 id="context">Context</h2>
+<p>May is coming to an end, I'm on a barbecue cookout, vibing with a couple of my friends, when the main barbecue guy - Davis - mentions that his sister is a representative from one of the collaborating parties in an upcoming innovation grants project called &quot;MaKE IT&quot;. That immediately caught my attention.</p>
+<p>Although Davis didn't seem too keen on the idea at first, I did. I've participated in another innovation grants project before and had good overall memories, although we didn't get as far as we had expected. But, since then, it's always been a dream of mine to participate and lead my own team to victory in such project. So we made a team of 3 people - me, Davis and Aļika - and started brainstorming.</p>
+<p>The project was supposed to last 4 months, but y'know how it is with time management - just add an extra 2 on top, that would make for a more precise estimate. This both was a handicap and an opportunity for miracles to happen, so here's how it all went.</p>
+<h2 id="june">June</h2>
+<p>We gathered for our first meeting to discuss potential ideas only to realize we've jumped into this without thinking of anything beforehand and not a single idea seemed to work. Our first idea wasn't even close to a MIDI controller - it was a smart plug that allows the tracking of electricity consumption and turn off the plug whenever a person isn't close and/or the consumption is too high. Crazy what you can come up with when you don't know your range.</p>
+<p>Nothing much else happened in June, besides the fact we might've come up with a genius marketing strategy I'm not willing to explain.</p>
+<img src="./assets/midi-marketing.png" style="margin-bottom: 50px;" alt="Maze MIDI Marketing" width="100%">
+<h2 id="july">July</h2>
+<p>This is what we did repeatedly for 90% percent of July:</p>
+<p><img src="https://media.tenor.com/3eGE_XIvCO4AAAAd/mimimimimi-cat-sleeping.gif" alt="Eepy" /></p>
+<p><img src="https://media.tenor.com/G8tremXdGN0AAAAd/ren-and-stimpy-ren.gif" alt="Wake up" /></p>
+<p>Then we decided to gather on-site one more time to discuss other potential ideas. During the meetup we realized that we all have interest in music, me and Davis both even have experience in music production - that's when everyone started to open up and the big ideas started rolling in.</p>
+<h2 id="august">August</h2>
+<p>This is when the path seemed clearer than ever. We had figured the base idea, done the research... but now what? The MIDI controller solution involves electronics and creating the schema, product 3D design, web design, marketing strategy and campaign. Our team doesn't even come close to completing all this, we just lacked the skills for that. Technically, I could've pooped out some simple solution for each of these points, but we're going for the big leagues, the chances of this working out would've been slim.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/aLBvDBKKRNU?si=CwkQ7za8q9xh8EfF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p>Right from the beginning of the MIDI controller idea, I had this Fox Stevenson unreleased song in my head, especially the arpeggiated melody that starts at 0:00 and fades to the background at 0:10 in that video.</p>
+<p>For a while I've been trying to replicate the feel of that melody, but without any success. What I noticed, though - there's lots of notes in the arpeggio and lots of added effects that create this beautiful soundscape. I could only approximate the approach that was used there:</p>
+<ul>
+<li>A modified sawtooth synth;</li>
+<li>Some arpeggiator plugin. I believe a plugin was used to arpeggiate the notes of a chord instead of drawing the arp notes manually since that's quite a lot of manual work;</li>
+<li>Grain delay plugin;</li>
+<li>Reverb plugin.</li>
+</ul>
+<p>This is the base of the sound which I believe is mostly correct. Reverse-engineering this wasn't that hard, but replicating the sound itself would be difficult, since the complicated chords. It would be perfect if there were known intervals between the notes in the chord, so that these chords could be generated instead of having to break your fingers trying to play big chords across the whole MIDI keyboard.</p>
+<p>Thankfully, this is very achievable with the help of tonal harmonies. Tonal harmonies exist in every single song we hear every day - I dunno what else to explain. Essentially, tonal harmonies serve as a guide for which note goes well together with another note. By looking at the theory behind it, there are noticeable intervals between every note in any chord, with the condition that the chord <em>sounds right</em>. Welp, there's always jazz fuckers who will find the resolution chord even for the sound the piano makes when you sit on it and call it the C7(#9(5€)#11b13). I won't be looking into this. However, I want to find the sweet spot for generating these dreamy chords, while also not restraining the user to only those intervals - that would be a shame.</p>
+<h3 id="ableton-rack">Ableton Rack</h3>
+<img src="./assets/midi-rack-sc.png" alt="Maze MIDI Sketch" width="100%">
+<p><a href="./assets/maze-rack.adg" download>Download for Ableton</a></p>
+<p>I made this Ableton rack by combining an existing <a href="https://www.productionmusiclive.com/pages/free-chord-generator-rack">chord generator rack</a> I customized with my own extension of the rack with added effects. The goal of this was to simulate the result I wanted to achieve with the MIDI controller as close as I imagined it in my head. Just download it, throw it onto an Ableton MIDI track and play some notes while tweaking the knobs. It's still missing some key parameters the MIDI controller would have, but it works.</p>
+<video width="100%" controls>
+    <source src="./assets/midi-rack-demo.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+<p>While making this rack, I really got to see the importance of this being a MIDI controller. It's just impossible to have an ergonomic control over everything on display.</p>
+<p>And, as you can see in the video, only a single note is being played, but the rack generates full chords using tonal harmonies - that's the core beauty of this whole solution.</p>
+<p>This still doesn't quite resolve the issue of being able to only play chords with certain intervals, though. What did I do? I decided that it's a problem for the next month and forgot about it. Instead we rolled out our list of features our MIDI controller would offer:</p>
+<ul>
+<li>12 keys (1 octave) that generate all the possible chords;</li>
+<li>Knob for adding/removing notes from the chord - I really like this idea of changing the arpeggio size while playing the chords. Really neat way to control the dynamic of the sound;</li>
+<li>Knobs for controlling the base arpeggio parameters:
+<ul>
+<li>Speed;</li>
+<li>Direction;</li>
+<li>Gate;</li>
+</ul>
+</li>
+<li>8 octave select buttons (basically selecting the highest or the lowest range the notes can go)</li>
+<li>Touch-sensitive keys - function as normal when pressed, but when gliding your finger up and down on the key, the notes in the arpeggio get thrown up an octave or down an octave, gradually;</li>
+<li>12 buttons for selecting the key for the chords;</li>
+<li>4 knobs for mapping the MIDI controller to DAW;</li>
+<li>Major/minor switch;</li>
+<li>Master volume knob.</li>
+</ul>
+<p>Quite a lot, if you ask me. To finally understand how it would even look like, we made a sketch in Figma, which is a sketch that combined multiple different sketches and ideas provided by Aļika.</p>
+<h3 id="the-sketch">The Sketch</h3>
+<img src="./assets/midi-sketch.png" alt="Maze MIDI Sketch" width="100%">
+<p>We were cutting corners here, as you can see - it's very basic, but contains most of what we want. Although the path seems clearer to me now, there are still so many questions... too many questions.</p>
+<p>I decided to ignore them for now and pretend that everything is alright (I very well knew this was going to shit). Keep in mind, at this moment I had exactly 0 knowledge about electronics or how MIDI devices work whatsoever.</p>
+<p>I tried learning everything by myself, but I realized it's different with hardware than it is with software - you need to have a microprocessor, buttons, switches, potentiometers, wires, etc. I needed to get some Arduino for prototyping, that's as far as my knowledge went. So I started attending a local STEM club as a last resort for help, where the immediate response I got was that it's impossible to do during the given timeframe.</p>
+<p>Being the biggest baller I am, I still decided that I'm not gonna give all this up and continue working on the idea, even if it doesn't work out in the end. So I got myself an Arduino Uno, a couple potentiometers, breadboard, and some buttons I found on <a href="https://www.digikey.lv/">DigiKey</a> (all sponsored by &quot;MaKE IT&quot; folks), and started digging my way around the world of Arduino.</p>
+<p>Meanwhile, Davis unexpectedly popped up with the best 3D case design of the MIDI controller I would've never expected. No prior skills in Blender, 2 weeks, just outta nowhere.</p>
+<h3 id="the-3d-model">The 3D model</h3>
+<img src="./assets/midi-3d.png" alt="Maze MIDI 3D Model" width="100%">
+<p>Also August was coming to an end and one of the deliverables we undertook was to make a web design for our MIDI controller. So that was also a speedrun from my side.</p>
+<h3 id="the-web-design">The Web design</h3>
+<img src="./assets/midi-web.png" alt="Maze MIDI Web design" width="100%">
+<p>The design consists of a lot of placeholders and doesn't really explain much, but it looks pretty - that's as far as I'm concerned.</p>
+<h2 id="september">September</h2>
+<p>The intermediate result presentations got delayed... like a lot. We should've already done the presentations in July, but instead they were moved to September.</p>
+<p>The &quot;MaKE IT&quot; project itself expects different solutions and ideas, but I know for a fact that an idea of a cup holder made of refurbished wood shavings would score better than a well-thought prototype of a new music instrument, just because it's marked as eco-frinedly.</p>
+<p>The only way out would be if I tried to sell the whole MIDI controller idea as much as possible, basically telling that the person watching my presentation <em>needs</em> it. And... I think it worked. But I think the whole selling idea didn't play a huge role in this as it will in the final result presentation. The jury just wanted to see if we're not falling back on our progress.</p>
+<p>After the presentation I continued coding the Arduino Uno prototype, just as I ran into a huuge issue - Arduino Uno doesn't support native MIDI signals. What that means is - I have the code that should send the MIDI signal, I have the libraries necessary for that, but the physical Arduino Uno device doesn't have the interface for translating the raw signal into something a computer can pick up as MIDI signal. This is what the STEM guy, Mārtiņš, had warned me about, too.</p>
+<p>After an extensive research, I found out that some other Arduino folks had made very basic MIDI controllers using Arduino Uno. In their implementations, there was some common software they used on the computer - <a href="https://projectgus.github.io/hairless-midiserial/">Hairless MIDI</a> and <a href="https://www.tobias-erichsen.de/software/loopmidi.html">loopMIDI</a>. What these programs do is translate the incoming signal from the serial port into a MIDI signal and create a virtual MIDI cable that Ableton or any other DAW can recognize.</p>
+<p>Here's the starter template code for sending MIDI signals through <code>Hairless MIDI</code> and <code>loopMIDI</code>:</p>
+<pre data-lang="cpp" style="background-color:#191919;color:#ffffff;" class="language-cpp "><code class="language-cpp" data-lang="cpp"><span style="color:#80d500;">#include </span><span style="color:#ffd700;">&lt;Wire.h&gt;
+</span><span style="color:#80d500;">#include </span><span style="color:#ffd700;">&lt;MIDI.h&gt;
+</span><span style="color:#cccccc;">
+</span><span style="color:#cccccc;">MIDI_CREATE_DEFAULT_INSTANCE();
+</span><span style="color:#cccccc;">
+</span><span style="color:#80d500;">int</span><span style="color:#cccccc;"> noteON </span><span>= </span><span style="color:#eddd5a;">144</span><span style="color:#cccccc;">;  </span><span style="background-color:#171717;color:#616161;">// 144 = 10010000 in binary, note on command
+</span><span style="color:#80d500;">int</span><span style="color:#cccccc;"> noteOFF </span><span>= </span><span style="color:#eddd5a;">128</span><span style="color:#cccccc;">; </span><span style="background-color:#171717;color:#616161;">// 128 = 10000000 in binary, note off command
+</span><span style="color:#cccccc;">
+</span><span style="color:#80d500;">void </span><span>MIDImessage</span><span style="color:#cccccc;">(</span><span style="color:#80d500;">int </span><span style="font-style:italic;color:#8aa6c1;">command</span><span style="color:#cccccc;">, </span><span style="color:#80d500;">int </span><span style="font-style:italic;color:#8aa6c1;">MIDInote</span><span style="color:#cccccc;">, </span><span style="color:#80d500;">int </span><span style="font-style:italic;color:#8aa6c1;">MIDIvelocity</span><span style="color:#cccccc;">)
+</span><span style="color:#cccccc;">{
+</span><span style="color:#cccccc;">  </span><span style="background-color:#171717;color:#616161;">// send note on or note off command
+</span><span style="color:#cccccc;">  Serial.write(command);
+</span><span style="color:#cccccc;">  </span><span style="background-color:#171717;color:#616161;">// Send pitch data
+</span><span style="color:#cccccc;">  Serial.write(MIDInote);
+</span><span style="color:#cccccc;">  </span><span style="background-color:#171717;color:#616161;">// Send velocity data
+</span><span style="color:#cccccc;">  Serial.write(MIDIvelocity);
+</span><span style="color:#cccccc;">}
+</span><span style="color:#cccccc;">
+</span><span style="color:#80d500;">void </span><span>setup</span><span style="color:#cccccc;">()
+</span><span style="color:#cccccc;">{
+</span><span style="color:#cccccc;">  </span><span style="background-color:#171717;color:#616161;">// Initialize MIDI
+</span><span style="color:#cccccc;">  MIDI.begin();
+</span><span style="color:#cccccc;">  Serial.begin(</span><span style="color:#eddd5a;">115200</span><span style="color:#cccccc;">);
+</span><span style="color:#cccccc;">}
+</span><span style="color:#cccccc;">
+</span><span style="background-color:#171717;color:#616161;">// Send MIDI message through USB port
+</span><span style="color:#cccccc;">
+</span><span style="color:#80d500;">void </span><span>loop</span><span style="color:#cccccc;">()
+</span><span style="color:#cccccc;">{
+</span><span style="color:#cccccc;">  </span><span style="background-color:#171717;color:#616161;">// Send note on
+</span><span style="color:#cccccc;">  MIDImessage(noteON, </span><span style="color:#eddd5a;">60</span><span style="color:#cccccc;">, velocity); 
+</span><span style="color:#cccccc;">
+</span><span style="color:#cccccc;">  </span><span style="background-color:#171717;color:#616161;">// How long the note should play
+</span><span style="color:#cccccc;">  delay(</span><span style="color:#eddd5a;">100</span><span style="color:#cccccc;">);
+</span><span style="color:#cccccc;">
+</span><span style="color:#cccccc;">  MIDImessage(noteOFF, </span><span style="color:#eddd5a;">60</span><span style="color:#cccccc;">, </span><span style="color:#eddd5a;">0</span><span style="color:#cccccc;">); </span><span style="background-color:#171717;color:#616161;">// Send note off
+</span><span style="color:#cccccc;">
+</span><span style="color:#cccccc;">  </span><span style="background-color:#171717;color:#616161;">// Delay between each note
+</span><span style="color:#cccccc;">  delay(</span><span style="color:#eddd5a;">200</span><span style="color:#cccccc;">);
+</span><span style="color:#cccccc;">}
+</span></code></pre>
+<p>It's important to note that HairlessMIDI will not work on a Silicon based Mac. As I was attending the STEM club, I was mainly using my laptop to develop the MIDI controller, so I ended up using <a href="https://github.com/RuudMulder/SerialMidiBridge/tree/9a82b27217b2e03f86f39e560a174eba899054e1">SerialMidiBridge</a> by RuudMulder on GitHub and slightly modified it for my needs.</p>
+<h2 id="october">October</h2>
+<p>&quot;MaKE IT&quot; also offered lectures on different relevant topics that would help us move forwards, and there was no option to skip those lectures, we had to attend them. But we didn't find them useful for our case, so we usually ended up just putting the lecture in the background and continued doing other MIDI controller things.</p>
+<p>This is the final month, the presentation is on 3rd November. Last month I only figured how I can send the MIDI signal from the MIDI controller to my computer and process it in Ableton, but there was no functionality, no buttons, no knobs, nothing. This was the last moment to make it all work.</p>
+<p>Meeting our last deliverable, I made the schema for the MIDI controller with the help of Mārtiņš. Although I had already wired the MIDI controller before making the schema, I made it anyway and included parts that should be implemented in the future. In the end, it's a mix of what's been done and what should be done, and only I know how far into the schema is the current solution.</p>
+<h3 id="midi-controller-schema">MIDI controller schema</h3>
+<img src="./assets/midi-schema.png" alt="Maze MIDI Schema" width="100%">
+<p>The thing I found the most confusing was that I needed to think in loops because, in Arduino, the code runs in a big loop constantly. Welp, if you think about it, any server runs in a loop, too. The control flow is just abstracted from it so much that you don't ever need to give it a thought. Oh, and also debugging was not available, since the baud rate is set to <code>115200</code> and Arduino IDE debugging console doesn't have the option to listen on that rate. There are definitely other workarounds for that, but I was running low on time and decided that eyeballing the code would be more efficient. And I got really good at that. After like 50 code uploads to my Arduino Uno, it worked just as I wanted.</p>
+<h3 id="the-result">The result</h3>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/gfWn8kauTtI?si=Oa3zoqxHvD28-sD0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p>If you're wondering why there's a slice of bread just laying there, it's because our team name was &quot;Breadboard&quot; and because it's funny.</p>
+<h2 id="november">November</h2>
+<p>The final presentation day came way faster than I could notice. We had to wake up at 7am to go to Riga from Ventspils. On the way to Riga, I realized how far we've come and how far I've led my team up until this moment and suddenly felt a huge feeling of responsibility to finish this off in the best way possible. A different type of fear struck me - it wasn't going in front of the class and looking like a fool when presenting, it was about leading the team so far and failing to deliver on the very last step.</p>
+<p>We were presenting at 1pm. We arrived 30min earlier and got to see a couple other presentations before us, which somehow encouraged me to do better. There was so much going on in my mind and I was kinda floating in the room up until the moment I heard the host call our team name. Our time had come.</p>
+<p>Time flew by when I was speaking, I got lost in my words, not paying attention to how much time's left, and everything felt super tense. There was a huge jury sitting at a round table, everyone's looking right at me. Only halfway through I really got myself together. That's when I kind of felt the audience get more invested in the presentation and realized I got this.</p>
+<p>We were the last to present, so shortly after a quick break the results were ready. Honestly, at that moment, I was just happy to be there, it felt like a huge responsibility had just been lifted from my shoulders. I just said &quot;GG WP&quot; in my mind and smiled as everyone applauded as the host finished the introduction to the awards ceremony. The next moment, I'm standing in front of the room and everyone's applauding for me. We had just won.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>I still don't believe the outcome of this. It happened so fast compared to how long we've been working on this. Almost 6 months of brainstorming, learning, research, work and frustration finalized in under an hour. To this day, I still get this weird bittersweet feeling when thinking back on it, that surely was a new experience.</p>
+<p>Most importantly, though, this project really opened my eyes, just as the other project I participated in with another team 4 years ago did, but this time it was different. I had absolutely no idea how I'd scramble the MIDI controller together and then also program it. This field was blank for me. The same goes for Davis, who created the most impressive 3D model for a person that had no prior experience in Blender nor 3D modelling itself, and Aļika, who got to work in a very dynamic and unpredictable environment and come up with quite unusual solutions in both design and marketing.</p>
+<p>~ Team Maizes Galds (Breadboard)</p>
+<img src="./assets/midi-spin.gif" alt="Maze MIDI Schema" width="100%">
+    </div>
+
+    
+        <footer>
+            <hr>
+            <p>
+                
+                    Published by Ronalds Palacis
+                
+                
+                    
+                    in <a href="https://rwnalds.github.io/categories/stories/">Stories</a>
+                
+                
+            </p>
+            
+            
+        </footer>
+    
+</article>
+
+
+    </body>
+
+</html>

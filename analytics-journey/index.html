@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+      <!-- Enable responsiveness on mobile devices-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+      
+    
+
+      <title></title>
+
+      
+
+      
+          <link rel="stylesheet" href="https://rwnalds.github.io/site.css">
+      
+
+      
+      
+    </head>
+
+    <body class="hack dark main container">
+        
+    
+        
+                
+                    <header>
+                        <nav itemscope itemtype="http://schema.org/SiteNavigationElement">
+                        
+                            <a itemprop="url"
+                               class=""
+                               href="https://rwnalds.github.io">
+                                <span itemprop="name">Home</span></a>
+                        
+                            <a itemprop="url"
+                               class=""
+                               href="https://rwnalds.github.io/categories">
+                                <span itemprop="name">Categories</span></a>
+                        
+                            <a itemprop="url"
+                               class=""
+                               href="https://github.com/rwnalds/rwnalds.github.io">
+                                <span itemprop="name">Source</span></a>
+                        
+                            <a itemprop="url"
+                               class=""
+                               href="https://rwnalds.github.io/rss.xml">
+                                <span itemprop="name">RSS</span></a>
+                        
+                            <a itemprop="url"
+                               class=""
+                               href="https://github.com/rwnalds">
+                                <span itemprop="name">About</span></a>
+                        
+                            <a itemprop="url"
+                               class=""
+                               href="https://linkedin.com/in/ronalds-palacis">
+                                <span itemprop="name">LinkedIn</span></a>
+                        
+                            <a itemprop="url"
+                               class=""
+                               href="https://soundcloud.com/rwnalds">
+                                <span itemprop="name">SoundCloud</span></a>
+                        
+                        </nav>
+                    </header>
+                
+            
+    
+
+<article itemscope itemtype="http://schema.org/BlogPosting">
+    <header>
+        <h1 itemprop="headline">From statistics to profit: An unexpected data journey</h1>
+        <span class="muted">
+    <svg class="icon i-clock" viewBox="0 0 32 32"
+         width="16" height="16" fill="none" stroke="currentcolor"
+         stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+        <circle cx="16" cy="16" r="14"/>
+        <path d="M16 8 L16 16 20 20"/>
+    </svg>
+    <span>6 minute read</span>
+    <svg class="icon i-edit" viewBox="0 0 32 32"
+         width="16" height="16" fill="none" stroke="currentcolor"
+         stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+        <path d="M30 7 L25 2 5 22 3 29 10 27 Z M21 6 L26 11 Z M5 22 L10 27 Z"/>
+    </svg>
+
+    Published: 2024-12-25
+</span>
+    </header>
+    <div itemprop="articleBody">
+      <p>Three websites, two pivots, and one profitable accident. That's how our Statistics and Data Analysis course project evolved from studying website metrics to accidentally building a casino affiliate business. Here's the story of how we stopped worrying about perfect analytics and started making actual money.</p>
+<span id="continue-reading"></span>
+<hr />
+<p>Google Analytics has this way of making you feel simultaneously overwhelmed and underwhelmed:</p>
+<div class="tenor-gif-embed" data-postid="24033180" data-share-method="host" data-aspect-ratio="1.77778" data-width="100%"><a href="https://tenor.com/view/confused-math-zach-galifianakis-thinking-gif-24033180">Confused Math GIF</a>from <a href="https://tenor.com/search/confused-gifs">Confused GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+<p>Overwhelmed by the sheer amount of data, underwhelmed by how little of it actually matters. After spending weeks diving deep into analytics tools and metrics, we learned that sometimes the most valuable data isn't in your analytics dashboard at all.</p>
+<h2 id="background">Background</h2>
+<p>During the Statistics and Data Analysis course, our team of three had an ambitious plan: analyze website metrics across three different projects:</p>
+<ol>
+<li>A new Business Academy website</li>
+<li>Our course cooperative's digital agency site</li>
+<li>A casino affiliate website aggregating Latvian casinos (<a href="https://mansbonuss.com">mansbonuss.com</a>)</li>
+</ol>
+<p>The goal was to compare metrics across different types of websites and extract meaningful insights. However, as often happens in the real world, our plans took an interesting turn.</p>
+<div class="tenor-gif-embed" data-postid="5012719" data-share-method="host" data-aspect-ratio="1.77778" data-width="100%"><a href="https://tenor.com/view/plans-change-gif-5012719">Plans Change GIF</a>from <a href="https://tenor.com/search/plans-gifs">Plans GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+<h2 id="the-analytics-landscape">The Analytics Landscape</h2>
+<p>After researching and testing different analytics solutions, here's what we learned about each:</p>
+<h3 id="google-analytics-4-ga4">Google Analytics 4 (GA4)</h3>
+<p><strong>The Good:</strong></p>
+<ul>
+<li>Free with unlimited events</li>
+<li>Deep integration with Google's ecosystem</li>
+<li>Advanced user behavior tracking</li>
+<li>Custom event tracking</li>
+<li>Machine learning insights</li>
+</ul>
+<p><strong>The Bad:</strong></p>
+<ul>
+<li>Complex implementation for custom events</li>
+<li>Significant learning curve</li>
+<li>Data sampling on free tier</li>
+<li>Privacy concerns with GDPR</li>
+<li>Historical data limited to 14 months</li>
+</ul>
+<h3 id="meta-pixel-facebook-pixel">Meta Pixel (Facebook Pixel)</h3>
+<p><strong>The Good:</strong></p>
+<ul>
+<li>Excellent for ad campaign tracking</li>
+<li>Detailed demographic data</li>
+<li>Built-in event tracking</li>
+<li>Good for retargeting</li>
+<li>Real-time data</li>
+</ul>
+<p><strong>The Bad:</strong></p>
+<ul>
+<li>Limited to Meta's ecosystem</li>
+<li>Privacy concerns (iOS 14.5+ impact)</li>
+<li>Requires user consent</li>
+<li>Not great for general analytics</li>
+<li>Can affect site performance</li>
+</ul>
+<h3 id="plausible-analytics">Plausible Analytics</h3>
+<p><strong>The Good:</strong></p>
+<ul>
+<li>Simple, clean interface</li>
+<li>Privacy-focused (EU-hosted)</li>
+<li>No cookie consent needed</li>
+<li>Fast loading (under 1KB)</li>
+<li>Easy to understand metrics</li>
+</ul>
+<p><strong>The Bad:</strong></p>
+<ul>
+<li>Paid only (€9/month minimum)</li>
+<li>Basic event tracking</li>
+<li>No user-level data</li>
+<li>Limited custom reporting</li>
+<li>No raw data access</li>
+</ul>
+<h3 id="matomo-formerly-piwik">Matomo (formerly Piwik)</h3>
+<p><strong>The Good:</strong></p>
+<ul>
+<li>Full data ownership</li>
+<li>GDPR compliant out of the box</li>
+<li>Similar features to GA</li>
+<li>No data sampling</li>
+<li>Flexible hosting options</li>
+</ul>
+<p><strong>The Bad:</strong></p>
+<ul>
+<li>Resource-intensive if self-hosted</li>
+<li>Complex setup for custom tracking</li>
+<li>Higher costs at scale</li>
+<li>Limited community support</li>
+<li>Less intuitive than modern tools</li>
+</ul>
+<h2 id="our-analytics-stack-decision">Our Analytics Stack Decision</h2>
+<p>After evaluating our needs and constraints, we ended up on:</p>
+<ol>
+<li>
+<p><strong>Google Analytics 4</strong> for:</p>
+<ul>
+<li>Core website metrics</li>
+<li>User behavior tracking</li>
+<li>Custom event tracking</li>
+<li>Conversion tracking</li>
+</ul>
+</li>
+<li>
+<p><strong>Meta Pixel</strong> for:</p>
+<ul>
+<li>Ad campaign performance</li>
+<li>Audience insights</li>
+<li>Retargeting capabilities</li>
+<li>Social traffic analysis</li>
+</ul>
+</li>
+<li>
+<p>(additional) <strong>TikTok</strong> purhcased views for:</p>
+<ul>
+<li>Bigger audience reach</li>
+<li>More precise targeting</li>
+<li>Better conversion rates</li>
+</ul>
+</li>
+</ol>
+<p>While we didn't use Meta Pixel yet, we're planning to use it in the future for paid ads.</p>
+<p>Here's why GA4 and Meta Pixel is the best choice for us:</p>
+<ol>
+<li><strong>Cost Efficiency</strong>: The free tier is more than enough for our needs</li>
+<li><strong>Complementary Data</strong>: GA4 for general analytics, Meta Pixel for social insights</li>
+<li><strong>Future Proofing</strong>: Learning industry-standard tools</li>
+<li><strong>Marketing Potential</strong>: Ready for future paid advertising</li>
+</ol>
+<h2 id="the-unexpected-turn">The Unexpected Turn</h2>
+<p>While setting up analytics across our three projects, something interesting happened. Our casino affiliate website started getting real traffic, and more importantly - potential for real revenue. Our focus quickly shifted from pure analytics to:</p>
+<ol>
+<li>Understanding affiliate partnerships</li>
+<li>Tracking conversion rates</li>
+<li>Optimizing for actual revenue</li>
+</ol>
+<p>This wasn't just about numbers anymore - it was about real business opportunities. While we were supposed to be studying statistics, we found ourselves negotiating affiliate deals and optimizing landing pages.</p>
+<h2 id="what-we-actually-learned">What We Actually Learned</h2>
+<h3 id="from-analytics">From Analytics:</h3>
+<p>Here's what our traffic sources looked like:</p>
+<img src="./assets/ga1.png" alt="Traffic Sources" width="100%">
+<img src="./assets/ga2.png" alt="Traffic Sources" width="100%">
+<img src="./assets/ga3.png" alt="Traffic Sources" width="100%">
+<p>Key insights:</p>
+<ol>
+<li>Mobile traffic dominated (over 60%)</li>
+<li>Users spent more time on comparison pages</li>
+<li>Organic search was our main traffic source</li>
+</ol>
+<h3 id="from-business-reality">From Business Reality:</h3>
+<ol>
+<li>Revenue potential matters more than perfect analytics</li>
+<li>Real user behavior often surprises you</li>
+<li>Being flexible with your goals is crucial</li>
+</ol>
+<h2 id="the-tools-we-actually-used">The Tools We Actually Used</h2>
+<p>Our final tech stack was simpler than planned:</p>
+<pre data-lang="javascript" style="background-color:#191919;color:#ffffff;" class="language-javascript "><code class="language-javascript" data-lang="javascript"><span style="background-color:#171717;color:#616161;">// Google Tag Manager for tracking casino clicks</span><span style="color:#cccccc;">
+</span><span style="color:#cccccc;">dataLayer.</span><span style="color:#8aa6c1;">push</span><span style="color:#cccccc;">({
+</span><span style="color:#ffd700;">&#39;event&#39;</span><span style="color:#cccccc;">: </span><span style="color:#ffd700;">&#39;casino_click&#39;</span><span style="color:#cccccc;">,
+</span><span style="color:#ffd700;">&#39;casino_name&#39;</span><span style="color:#cccccc;">: </span><span style="color:#ffd700;">&#39;Example Casino&#39;</span><span style="color:#cccccc;">,
+</span><span style="color:#ffd700;">&#39;button_location&#39;</span><span style="color:#cccccc;">: </span><span style="color:#ffd700;">&#39;comparison_table&#39;</span><span style="color:#cccccc;">,
+</span><span style="color:#ffd700;">&#39;device_type&#39;</span><span style="color:#cccccc;">: </span><span style="color:#ffd700;">&#39;mobile&#39;
+</span><span style="color:#cccccc;">});
+</span><span style="color:#cccccc;">
+</span></code></pre>
+<ol>
+<li><strong>Google Analytics 4</strong>: For basic metrics</li>
+<li><strong>Google Tag Manager</strong>: For event tracking</li>
+<li><strong>Google Sheets</strong>: For revenue tracking (sometimes simple is best)</li>
+</ol>
+<h2 id="key-takeaways">Key Takeaways</h2>
+<ol>
+<li><strong>Start Simple</strong>: Don't try to track everything at once</li>
+<li><strong>Follow the Money</strong>: When revenue opportunities appear, don't ignore them</li>
+<li><strong>Real Data &gt; Perfect Data</strong>: Some insights are better than no insights</li>
+<li><strong>Stay Flexible</strong>: Your initial plan might not survive contact with reality</li>
+</ol>
+<h2 id="looking-forward">Looking Forward</h2>
+<p>While we didn't complete our original analytics comparison across three websites, we ended up learning something more valuable - how to use data to drive real business decisions. Sometimes the best lessons come from the projects that don't go as planned.</p>
+<p>The casino affiliate website continues to grow, and we're now focusing on:</p>
+<ol>
+<li>Optimizing conversion rates</li>
+<li>Expanding our casino partnerships</li>
+<li>Using data to make better content decisions</li>
+<li>Actually making money (turns out this is important)</li>
+</ol>
+<h2 id="final-thoughts">Final Thoughts</h2>
+<p>Our journey from academic analytics project to potential business venture taught us that while data is important, action is essential. Sometimes the best data insights come from actually building something and seeing what happens.</p>
+<p>Now, if you'll excuse me, I need to go check our conversion rates... or maybe just build another casino comparison table.</p>
+<p><a href="https://www.coursera.org/account/accomplishments/certificate/9O29RU7Q7E9F">Assess for Success: Marketing Analytics and Measurement</a>
+<a href="https://skillshop.credential.net/82830425-1596-4efc-9cfb-8c093d39506e#acc.1LoVj2zq">Google Analytics Certification</a></p>
+
+    </div>
+
+    
+        <footer>
+            <hr>
+            <p>
+                
+                    Published by Ronalds Palacis
+                
+                
+                    
+                    in <a href="https://rwnalds.github.io/categories/analytics/">Analytics</a>
+                
+                
+            </p>
+            
+            
+        </footer>
+    
+</article>
+
+
+    </body>
+
+</html>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title> - Analytics</title>
+    <link href="https://rwnalds.github.io/categories/analytics/atom.xml" rel="self" type="application/atom+xml"/>
+    <link href="https://rwnalds.github.io"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2024-12-25T00:00:00+00:00</updated>
+    <id>https://rwnalds.github.io/categories/analytics/atom.xml</id>
+    <entry xml:lang="en">
+        <title>From statistics to profit: An unexpected data journey</title>
+        <published>2024-12-25T00:00:00+00:00</published>
+        <updated>2024-12-25T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://rwnalds.github.io/analytics-journey/" type="text/html"/>
+        <id>https://rwnalds.github.io/analytics-journey/</id>
+        
+        <summary type="html">&lt;p&gt;Three websites, two pivots, and one profitable accident. That&#x27;s how our Statistics and Data Analysis course project evolved from studying website metrics to accidentally building a casino affiliate business. Here&#x27;s the story of how we stopped worrying about perfect analytics and started making actual money.&lt;&#x2F;p&gt;
+</summary>
+        
+    </entry>
+</feed>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title> - Thoughts</title>
+    <link href="https://rwnalds.github.io/categories/thoughts/atom.xml" rel="self" type="application/atom+xml"/>
+    <link href="https://rwnalds.github.io"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2025-06-25T00:00:00+00:00</updated>
+    <id>https://rwnalds.github.io/categories/thoughts/atom.xml</id>
+    <entry xml:lang="en">
+        <title>How I won a startup competition in 3 weeks (and what actually mattered)</title>
+        <published>2025-06-25T00:00:00+00:00</published>
+        <updated>2025-06-25T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://rwnalds.github.io/soundpack-startup-journey/" type="text/html"/>
+        <id>https://rwnalds.github.io/soundpack-startup-journey/</id>
+        
+        <summary type="html">&lt;p&gt;Three weeks. One idea. Extreme hyperfixation. And somehow, I ended up pitching to investors in Riga after winning a startup competition I barely had time to prepare for. Here&#x27;s what actually made the difference when everything seemed stacked against me.&lt;&#x2F;p&gt;
+</summary>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>The biggest mistake of my early career</title>
+        <published>2023-04-12T00:00:00+00:00</published>
+        <updated>2023-04-12T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://rwnalds.github.io/biggest-mistake/" type="text/html"/>
+        <id>https://rwnalds.github.io/biggest-mistake/</id>
+        
+        <summary type="html">&lt;p&gt;Mistakes are good. They imply you&#x27;re in an uncomfortable place. I was so uncomfortable I left the place. But the place keeps chasing me till this day.&lt;&#x2F;p&gt;
+</summary>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Hello world!</title>
+        <published>2022-10-03T00:00:00+00:00</published>
+        <updated>2022-10-03T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://rwnalds.github.io/hello-world/" type="text/html"/>
+        <id>https://rwnalds.github.io/hello-world/</id>
+        
+        <summary type="html">&lt;p&gt;Who am I? What is this? What is love? Baby don&#x27;t hurt me&lt;&#x2F;p&gt;
+</summary>
+        
+    </entry>
+</feed>

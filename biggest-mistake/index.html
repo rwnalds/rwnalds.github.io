@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+      <!-- Enable responsiveness on mobile devices-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+      
+    
+
+      <title></title>
+
+      
+
+      
+          <link rel="stylesheet" href="https://rwnalds.github.io/site.css">
+      
+
+      
+      
+    </head>
+
+    <body class="hack dark main container">
+        
+    
+        
+                
+                    <header>
+                        <nav itemscope itemtype="http://schema.org/SiteNavigationElement">
+                        
+                            <a itemprop="url"
+                               class=""
+                               href="https://rwnalds.github.io">
+                                <span itemprop="name">Home</span></a>
+                        
+                            <a itemprop="url"
+                               class=""
+                               href="https://rwnalds.github.io/categories">
+                                <span itemprop="name">Categories</span></a>
+                        
+                            <a itemprop="url"
+                               class=""
+                               href="https://github.com/rwnalds/rwnalds.github.io">
+                                <span itemprop="name">Source</span></a>
+                        
+                            <a itemprop="url"
+                               class=""
+                               href="https://rwnalds.github.io/rss.xml">
+                                <span itemprop="name">RSS</span></a>
+                        
+                            <a itemprop="url"
+                               class=""
+                               href="https://github.com/rwnalds">
+                                <span itemprop="name">About</span></a>
+                        
+                            <a itemprop="url"
+                               class=""
+                               href="https://linkedin.com/in/ronalds-palacis">
+                                <span itemprop="name">LinkedIn</span></a>
+                        
+                            <a itemprop="url"
+                               class=""
+                               href="https://soundcloud.com/rwnalds">
+                                <span itemprop="name">SoundCloud</span></a>
+                        
+                        </nav>
+                    </header>
+                
+            
+    
+
+<article itemscope itemtype="http://schema.org/BlogPosting">
+    <header>
+        <h1 itemprop="headline">The biggest mistake of my early career</h1>
+        <span class="muted">
+    <svg class="icon i-clock" viewBox="0 0 32 32"
+         width="16" height="16" fill="none" stroke="currentcolor"
+         stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+        <circle cx="16" cy="16" r="14"/>
+        <path d="M16 8 L16 16 20 20"/>
+    </svg>
+    <span>7 minute read</span>
+    <svg class="icon i-edit" viewBox="0 0 32 32"
+         width="16" height="16" fill="none" stroke="currentcolor"
+         stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
+        <path d="M30 7 L25 2 5 22 3 29 10 27 Z M21 6 L26 11 Z M5 22 L10 27 Z"/>
+    </svg>
+
+    Published: 2023-04-12
+</span>
+    </header>
+    <div itemprop="articleBody">
+      <p>Mistakes are good. They imply you're in an uncomfortable place. I was so uncomfortable I left the place. But the place keeps chasing me till this day.</p>
+<span id="continue-reading"></span>
+<hr />
+<p>You see, starting a career is always challenging. There's a point where you have to take a leap and start making money with the knowledge you've supposedly gained during the process(I assume) you have spent learning.</p>
+<p>You try finding a suitable job... and get accepted! Congrats! Now what?</p>
+<p>When you start working at a company, you must go through an internship. It's where you show your skills and slowly get accustomed to the work environment you'll be in for quite a while. The internship phase was ambiguous - I was &quot;learning&quot; while already working on enterprise software. And let me tell you one thing - it was a disaster.</p>
+<p>You develop a certain degree of Stockholm syndrome when joining a new company, especially if it's your first time and you're a junior developer(guess what, it's me). Now there are big Chad programmer guys who take you by your hand and lead you through the frameworks and procedures they used to make the software and how they work. And you listen carefully. You fool. No, no, it was me; I was the fool...</p>
+<p>That's what internships are all about - learning from the better. The worst part is that they could have provided me with excellent and proven tutorials already available on the internet. No. The company CEO was hosting YouTube streams where he taught his ways of software development to innocent students, just like me. The points made in those streams were so far off and contradicted everything I had learned about so far. But I felt like I was enlightened at that moment. I thought, wow, such a unique approach; this must be super efficient!</p>
+<p>Haha, yeah...</p>
+<h3 id="the-disaster">The disaster</h3>
+<p>It all starts from this. My rant.</p>
+<pre data-lang="js" style="background-color:#191919;color:#ffffff;" class="language-js "><code class="language-js" data-lang="js"><span style="color:#80d500;">const </span><span style="color:#cccccc;">{ EventEmitter } </span><span>= </span><span style="color:#8aa6c1;">require</span><span style="color:#cccccc;">(</span><span style="color:#ffd700;">&quot;events&quot;</span><span style="color:#cccccc;">);
+</span><span style="color:#cccccc;">
+</span><span style="color:#80d500;">const </span><span style="color:#cccccc;">firstEmitter </span><span>= new </span><span style="color:#cccccc;">EventEmitter();
+</span><span style="color:#cccccc;">
+</span><span style="color:#cccccc;">firstEmitter.</span><span>emit</span><span style="color:#cccccc;">(</span><span style="color:#ffd700;">&quot;My first event&quot;</span><span style="color:#cccccc;">);
+</span></code></pre>
+<p>Yes, that's the most primitive event emitter written in <a href="https://developer.mozilla.org/en-US/docs/Web/javascript">Javascript</a> - the core of all problems.
+Doesn't sound too crazy, but if you know a little about how state management works in <a href="https://react.dev/">React</a> and if I told you that state change was <em>always</em> triggered by events... yeah... the face of disgust.</p>
+<p>There was no possibility of debugging the code because HTTP requests were being made every 5 seconds, which means... <em>clears throat</em>... asynchronous event-based state changes every single time. And it wasn't just one state that lived happily in one component. It was state triggered across all components. You never knew which one could handle the event first. On top of that, every single React component extended the Node.js <code>EventEmitter</code> class. And the event handler itself was a HUGE class that reached 4k lines of code in one file. Absolute disaster.</p>
+<h3 id="the-redemption">The redemption</h3>
+<p>Soon enough I realized that the codebase was pure insanity. I proposed a different approach to the people in charge of the project management, and the conversation went something like this:</p>
+<ul>
+<li>&quot;Have you ever heard of a tool called <a href="https://tanstack.com/query/latest">React Query</a>? It's a great tool that helps you deal exactly with this problem, but even way better than the framework does it natively.&quot;</li>
+<li>&quot;Thanks, I will definitely check it out! 👍&quot;</li>
+</ul>
+<p>(P.S. Nobody ever checked it out)</p>
+<p>So I tried tackling the problem on my own, to show an example of a much cleaner implementation. Surely someone had to see the difference it makes.</p>
+<p>I'm too lazy to write the example of before and after, so here's just the after:</p>
+<pre data-lang="tsx" style="background-color:#191919;color:#ffffff;" class="language-tsx "><code class="language-tsx" data-lang="tsx"><span style="color:#80d500;">function </span><span>Component</span><span style="color:#cccccc;">() {
+</span><span style="color:#cccccc;">    </span><span style="color:#80d500;">const </span><span style="color:#cccccc;">[text, setText] </span><span>= useState</span><span style="color:#cccccc;">(</span><span style="color:#ffd700;">&quot;&quot;</span><span style="color:#cccccc;">);
+</span><span style="color:#cccccc;">
+</span><span style="color:#cccccc;">    </span><span style="color:#80d500;">const </span><span style="color:#cccccc;">{ data: products } </span><span>= useQuery</span><span style="color:#cccccc;">([</span><span style="color:#ffd700;">&quot;products&quot;</span><span style="color:#cccccc;">], </span><span style="color:#80d500;">async </span><span style="color:#cccccc;">() </span><span style="color:#80d500;">=&gt; </span><span style="color:#cccccc;">{
+</span><span style="color:#cccccc;">        </span><span style="color:#80d500;">const </span><span style="color:#cccccc;">{ data } </span><span>= </span><span style="color:#80d500;">await </span><span style="color:#cccccc;">axios.</span><span style="color:#8aa6c1;">get</span><span style="color:#cccccc;">(</span><span style="color:#ffd700;">&quot;...&quot;</span><span style="color:#cccccc;">);
+</span><span style="color:#cccccc;">        </span><span style="color:#80d500;">return </span><span style="color:#cccccc;">data;
+</span><span style="color:#cccccc;">    });
+</span><span style="color:#cccccc;">
+</span><span style="color:#cccccc;">    </span><span style="color:#80d500;">return </span><span style="color:#cccccc;">(
+</span><span style="color:#cccccc;">        {</span><span style="font-style:italic;color:#8aa6c1;">products</span><span style="color:#cccccc;">?.</span><span style="font-style:italic;color:#8aa6c1;">map</span><span style="color:#cccccc;">(</span><span style="font-style:italic;color:#8aa6c1;">p </span><span>=&gt; </span><span style="color:#cccccc;">(
+</span><span style="color:#cccccc;">            &lt;</span><span style="color:#80d500;">div</span><span style="color:#cccccc;">&gt;
+</span><span style="color:#cccccc;">                {p.</span><span style="color:#8aa6c1;">name</span><span style="color:#cccccc;">}
+</span><span style="color:#cccccc;">            &lt;/</span><span style="color:#80d500;">div</span><span style="color:#cccccc;">&gt;
+</span><span style="color:#cccccc;">        ))}
+</span><span style="color:#cccccc;">    );
+</span><span style="color:#cccccc;">}
+</span></code></pre>
+<p>This solves one of the main problems - there are no events getting emitted when asynchronous data is received and everything stays tied to the relevant component. On top of that <code>React Query</code> offers caching and other cool features, which usually are pain in the ass to to implement by hand and most likely have to be implemented in your React application. How to avoid it? Just use <a href="https://svelte.dev/">Svelte</a> instead bro.</p>
+<p>Long story short, I got all my code rewritten by the CEO. And after that, they also decided to keep me away from the essential projects as I caused too much trouble. I ended up working on a poorly written <code>WordPress</code> theme in <code>PHP</code> for the rest of my time in misery.</p>
+<p>That's when I decided to leave this place for good as there was no space for growth, even though I had no better job prospects at the moment.</p>
+<p>Till this day, I still have nightmares of events emitting uncontrollably, but had I only known those nightmares would soon come to reality...</p>
+<h3 id="the-aftermath">The aftermath</h3>
+<p>The problem is - I live in a small town, and every IT person here knows the CEO. Heck, he even appears all around Latvia. I keep seeing him in every single event I go to.</p>
+<p>I started a student company this year, which involves machine learning concepts. I sought a mentor to guide me through creating such solution. There were no results until one day... <em>The guy</em> texted me, saying he saw this student company on a public spreadsheet working on an AI solution, and asked if I knew the people behind it. Me, excited from being noticed, I proudly let him know it is I, the man himself.</p>
+<p>Two weeks later I find myself enrolled in a deep learning course of his and also him offering me a &quot;partnership&quot; with my student company, where he, in the end of the day, keeps the biggest cut.</p>
+<p>I was crushed. There was no way this could've possibly happened, I thought I had gotten away. No matter which direction I turned, I fell right into his hands.</p>
+<p>You know, I'm not quite the expert in deep learning, but as far as my concerns go, his way of teaching it wasn't the best either, so I got scared of big formulas and hid away. Never replied to his messages.</p>
+<p>Now, wherever I go, I feel like he's going to appear again out of nowhere and I'll be unknowingly dragged back into the cursed reality.</p>
+<h3 id="what-can-you-learn">What can you learn?</h3>
+<p>I know I talked so much shit and blamed the poor man for literally doing his job, but all he had to do was listen. Hear out the opinions of other people before diving head-first into writing bloated code(I really hope he's not reading this).</p>
+<p>I'd really have liked to hear his opinion on why my approach is bad, although I understand that the constant pressure from the IT industry constantly evolving can be unbeareable, and it makes you stick to the roots you know work. But that's what teams are for - distribute the pressure to work towards a better solution. But who am I to tell at this point.</p>
+<p>It's the effort you make towards making a solid connection with people that matters. You could give everything, even pizza and burgers on the weekends(they were pretty good though), but if you don't spend a single dime of your time to show empathy or simple appreciation towards the other person, it will all fall apart.</p>
+<p>And be careful not to be misled by others telling you you're doing something wrong. Ask them - why? Do your research, use your own experience, but also remember to listen.</p>
+<p>And don't hold me accountable for if anything goes wrong, you shouldn't be listening to a stranger on the internet anyway.</p>
+
+    </div>
+
+    
+        <footer>
+            <hr>
+            <p>
+                
+                    Published by Ronalds Palacis
+                
+                
+                    
+                    in <a href="https://rwnalds.github.io/categories/thoughts/">Thoughts</a>
+                
+                
+            </p>
+            
+            
+        </footer>
+    
+</article>
+
+
+    </body>
+
+</html>

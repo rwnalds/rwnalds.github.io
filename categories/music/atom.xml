@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title> - Music</title>
+    <link href="https://rwnalds.github.io/categories/music/atom.xml" rel="self" type="application/atom+xml"/>
+    <link href="https://rwnalds.github.io"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2024-09-28T00:00:00+00:00</updated>
+    <id>https://rwnalds.github.io/categories/music/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Maximizing copyright for monetary gain</title>
+        <published>2024-09-28T00:00:00+00:00</published>
+        <updated>2024-09-28T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://rwnalds.github.io/copyright-money/" type="text/html"/>
+        <id>https://rwnalds.github.io/copyright-money/</id>
+        
+        <summary type="html">&lt;p&gt;I accidentally made a banger remix and got away without disclosing copyrights. I wanted to understand how it works, so I dove into the world of copyrights and royalties. Here&#x27;s what I found.&lt;&#x2F;p&gt;
+</summary>
+        
+    </entry>
+</feed>
